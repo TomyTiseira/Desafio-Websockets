@@ -20,9 +20,9 @@ const products = [];
 // Messages array initialization.
 const messages = [];
 
-app.get("/", (req, res) => {
-  res.render("products", products);
-});
+// app.get("/", (req, res) => {
+//   res.render("products");
+// });
 
 io.on("connection", (client) => {
   // Send all products from products array.
